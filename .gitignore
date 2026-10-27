@@ -1,0 +1,98 @@
+# =============================================================================
+# .gitignore — Repositorio de Skills de IA y Gobernanza
+# =============================================================================
+
+# --- Secretos y Variables de Entorno ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.cert
+
+# Credenciales de Cloud y Service Accounts
+*credentials*.json
+*service-account*.json
+gcp-key*.json
+client_secret*.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+.virtualenv/
+
+# Testing y Linters Python
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / JavaScript / TypeScript ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.turbo/
+
+# Builds de frontend
+dist/
+dist-ssr/
+*.local
+
+# --- IDEs y Editores ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# --- Logs y Temporales ---
+*.log
+logs/
+temp/
+tmp/
+*.bak
+*.tmp
+*.backup
+*.tar.gz
+*.zip
+
+# --- Antigravity / Gemini CLI session data ---
+.gemini/
+brain/
